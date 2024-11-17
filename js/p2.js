@@ -11,6 +11,4 @@ if(confirmacion === "si"){
 
 function mostrarFormulario(nombre, edad, pais){
     alert("Registro guardado correctamente:" + "\nNombre: " + nombre + "\nEdad: " + edad + "\nPais: " + pais);
-    
-    
 }
