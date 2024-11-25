@@ -20,15 +20,36 @@ let horario = {
         let encabezado = tabla.insertRow();
         let celdaMateria = encabezado.insertCell();
         celdaMateria.textContent = 'Materia';
-        let celdaHora = encabezado.insertCell();
-        celdaHora.textContent = 'Hora';
+        let celdaLunes = encabezado.insertCell();
+        celdaLunes.textContent = 'Lunes';
+        let celdaMartes = encabezado.insertCell();
+        celdaMartes.textContent = 'Martes';
+        let celdaMiercoles = encabezado.insertCell();
+        celdaMiercoles.textContent = 'Miercoles';
+        let celdaJueves = encabezado.insertCell();
+        celdaJueves.textContent = 'Jueves';
+        let celdaViernes = encabezado.insertCell();
+        celdaViernes.textContent = 'Viernes';
 
         for (let i = 1; i <= 7; i++) {
             let fila = tabla.insertRow();
             let celdaMateria = fila.insertCell();
             celdaMateria.textContent = horario['materia' + i];
-            let celdaHora = fila.insertCell();
-            celdaHora.textContent = horario['hora' + i];
+            
+            let celdaLunes = fila.insertCell();
+            celdaLunes.textContent = horario['hora' + i];
+            let celdaMartes = fila.insertCell();
+            celdaMartes.textContent = horario['hora' + i];
+            let celdaMiercoles = fila.insertCell();
+            celdaMiercoles.textContent = horario['hora' + i];
+            let celdaJueves = fila.insertCell();
+            celdaJueves.textContent = horario['hora' + i];
+            let celdaViernes = fila.insertCell();
+            if(i == 1 || i == 2 || i == 7){
+                celdaViernes.textContent = horario['hora' + i];
+            } else{
+                celdaViernes.textContent = ' - ';
+            }
         }
 
         document.body.appendChild(tabla);
