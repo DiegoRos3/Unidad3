@@ -28,6 +28,20 @@ p{
     padding: 1rem;
 }
 
+table{
+    margin: 0 auto;
+}
+
+td{
+    font-size: 1.5rem;
+    padding: 1em;
+    border-radius: 0.5em;
+    margin: 0.5em;
+    background-color: #e8d1f7;
+    color: #3c0a64;
+    text-align: center;
+}
+
 .grid{
 
     background-color: #571a88;
