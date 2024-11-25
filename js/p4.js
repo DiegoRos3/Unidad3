@@ -53,12 +53,40 @@ let horario = {
         }
 
         document.body.appendChild(tabla);
+    },
+
+    suma: function(cali1, cali2, cali3, cali4, cali5, cali6, cali7){
+        let suma = (Number(cali1) + Number(cali2) + Number(cali3) + Number(cali4) + Number(cali5) + Number(cali6) + Number(cali7));
+        alert("La suma de sus calificaciones es: " + suma);
+    },
+
+    promedio: function(){
+        let promedio = ((Number(cali1) + Number(cali2) + Number(cali3) + Number(cali4) + Number(cali5) + Number(cali6) + Number(cali7)) / 7);
+        alert("El promedio de sus calificaciones es: " + promedio);
     }
 };
 
 let conf = confirm("¿Quiere ejecutar el horario?");
     if(conf){
         horario.imprimir();
+    } else{
+        alert("El objeto no se ha ejecutado");
+    }
+
+//Ejercicio 2    
+
+let cali1 = prompt("Ingrese su calificacion de Lenguajes y Automatas");
+let cali2 = prompt("Ingrese su calificacion de Arquitectura de Computadoras");
+let cali3 = prompt("Ingrese su calificacion de Fundamentos de Telecomunicaciones");
+let cali4 = prompt("Ingrese su calificacion de Taller de Bases de Datos");
+let cali5 = prompt("Ingrese su calificacion de Fundamentos de Ingenieria de Software");
+let cali6 = prompt("Ingrese su calificacion de Sistemas operativos");
+let cali7 = prompt("Ingrese su calificacion de Programacion Web");
+
+let conf2 = confirm("¿Quiere ejecutar el Objeto?");
+    if(conf2){
+        horario.suma(cali1, cali2, cali3, cali4, cali5, cali6, cali7);
+        horario.promedio(cali1, cali2, cali3, cali4, cali5, cali6, cali7);
     } else{
         alert("El objeto no se ha ejecutado");
     }
