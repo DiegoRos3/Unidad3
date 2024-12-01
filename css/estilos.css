@@ -16,6 +16,18 @@ h2 {
     font-size: 3rem;
     color: #DBD3D3;
 }
+
+#menu_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+#menu_nav a{
+    color: #DBD3D3;
+}
+
 p{
     text-align: center;
     font-size: 2rem;
