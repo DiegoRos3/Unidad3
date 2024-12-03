@@ -94,6 +94,7 @@ footer{
     flex-direction: column;
     align-items: center;
     padding: 2rem;
+    
 }
 
 footer button{
@@ -101,6 +102,7 @@ footer button{
     color: white;
     border-radius: 2rem;
     font-size: 2em;
+    margin: 1rem;
 }
 
 /* Aquí no debe haber reglas de grid-column fuera de los media queries */
